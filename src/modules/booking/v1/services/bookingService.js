@@ -886,7 +886,7 @@ const generateBookingLink = async (userData, res) => {
   const encodedId = encodeURIComponent(encryptPh);
   const encodedEntity = encodeURIComponent(entity_id);
   try {
-    const link = `https://booking.chillarpayments.com/#/salon?id=${encodedId}&entity=${encodedEntity}`;
+    const link = `https://booking.chillarpayments.com:8091/#/salon?id=${encodedId}&entity=${encodedEntity}`;
 
     return handleResponse({
       res,
